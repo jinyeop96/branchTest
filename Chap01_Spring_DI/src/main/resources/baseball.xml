@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="player1" class="com.test.di06.Player">
+		<constructor-arg value="류현진" />					<!--  생성자의 경우 <constructor-arg> 를 쓴다 -->
+		<constructor-arg value="31"/>						<!--  ArrayList인 경우  -->
+		<constructor-arg>
+			<list>
+				<value>9번타자</value>
+				<value>투수</value>
+			</list>
+		</constructor-arg>
+					
+		<property name="height" value="185" />				<!-- setter로만 설정할 수 있는 값이니 <property>를 이용하자 -->
+		<property name="weight" value="100" />
+	</bean>
+	
+	<bean id="player2" class="com.test.di06.Player">
+		<property name="name" value="박찬호" />
+		<property name="age" value="28" />
+		<property name="position">
+			<list>
+				<value>2번타자</value>
+				<value>투수</value>
+			</list>
+		</property>
+				
+		<property name="height" value="180" />
+		<property name="weight" value="80" />
+		
+	</bean>
+	
+	<bean id="playerinfo1" class="com.test.di06.PlayerInfo">
+		<!--  <property name="player" ref="player1" /> -->
+		<property name="player">
+			<ref bean="player1" />
+		</property>  
+	</bean>
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- ****중요**** 
+		- id값은 즁복 될 수 없음 
+		- <bean id="빈의 고유 이름" class="객체를 생성할 클래스의 위치(패키지명, 클래스명)" />  
+	-->
+	
+	
+	<!-- 1. 빈 정의(객체 생성)
+		"com.test.di05.OracleDAO" 클래스를 "oracle" 이라는 id를 지정해서 객체(bean)를 생성한다는 뜻 -->
+	<bean id="oracle" class="com.test.di05.OracleDAO"/>
+					
+	<!--  "com.test.di05.MySqlDAO" 클래스를 "mysql" 이라는 id를 지정해서 객체(bean)를 생성한다는 뜻 -->
+	<bean id="mysql" class="com.test.di05.MySqlDAO"/>
+
+	<!-- 2. 주입(DI) : setter 메서드를 이용해서 주입, constructor를 이용해서 주입 -->
+	<bean id="service" class="com.test.di05.ServiceImpl">
+		<!-- 2.1. setter 메서드를 이용하여 주입하는 방법  : <property> 속성 이용
+			 	  name 속성 해당 클래스의 변수 이름을 그대로 사용하는 것이 유리 -->
+			 	  
+		<!-- ServiceImpl service = new ServiceImpl();
+			service.setDAO(oracle); -->
+		<property name="dao" ref="oracle"></property>	 
+	</bean>
+
+</beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.7.201812201020-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/getsum.xml</config>
+		<config>src/main/resources/test.xml</config>
+		<config>src/main/resources/examdao.xml</config>
+		<config>src/main/resources/person.xml</config>
+		<config>src/main/resources/car.xml</config>
+		<config>src/main/resources/dao.xml</config>
+		<config>src/main/resources/baseball.xml</config>
+		<config>src/main/resources/map.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
