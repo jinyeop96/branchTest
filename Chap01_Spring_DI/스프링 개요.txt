@@ -1,5 +1,8 @@
 ﻿[스프링 개요]
 
+<<<<<<< HEAD
+여기는 pullTest2 에서 변경
+=======
 
 이건 branchTest2 에서 바꿧습니다 - 다시 변경하였습니다aaaaaaaaaaaaaaaaaaaaaaaaaa 진짜 branchTest2에서 바꿈!
 
@@ -9,6 +12,7 @@
 
 branchTest1 에서 바꿨습니다
 
+>>>>>>> 3f7cf01239838bddf5747be848a9f966e01cf3ff
 
 - 선수학습 : Java, JSP/Servlet, 스크립트언어(HTML, javascript, jquery, css)
 
