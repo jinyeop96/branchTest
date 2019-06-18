@@ -1,12 +1,11 @@
 ﻿[스프링 개요]
 
-<<<<<<< HEAD
 
 이건 branchTest2 에서 바꿧습니다 - 다시 변경하였습니다
 
-=======
+
 branchTest1 에서 바꿨습니다
->>>>>>> 87c20599b38825cd903637931d1ee94c3f25526d
+
 
 - 선수학습 : Java, JSP/Servlet, 스크립트언어(HTML, javascript, jquery, css)
 
